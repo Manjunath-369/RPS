@@ -1,0 +1,167 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Nosifer&family=Oswald:wght@300&family=Playpen+Sans:wght@100&family=Raleway:wght@300&family=Satisfy&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&family=Sometype+Mono:wght@500&family=Tektur&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Nosifer;
+    
+}
+    
+body{
+   background: linear-gradient(to right , blue ,black);
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-container{
+    width: 50%;
+    height: 10vw;
+    border: 3px solid rgb(175, 201, 234);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin:10px;
+    justify-content: space-evenly;
+}
+.container-box1{
+    margin-right:10vw;
+}
+.container-box1>p{
+    color: rgb(243, 11, 11);
+    font-size: x-large;
+    filter: drop-shadow(5px -5px 8px rgb(0, 0, 0));
+}
+.container-box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 15vh;
+    background-color: white;
+    border-radius: 15px;
+    font-size: large;
+    box-shadow: 10px -5px 10px rgb(4, 4, 4);
+}
+
+.score{
+    color: rgb(225, 24, 188);
+}
+
+.game{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 100px;
+    color: rgb(56, 78, 220);
+    margin: 1.25vw 35vw;
+}
+.game-res{
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+}
+.game-in{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    /* color: black; */
+    padding: 40px;
+    margin: 1vw;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 10px -10px 10px black;
+    cursor: grab;
+}
+.icon1{
+    border: 10px solid blue;
+}
+.icon2{
+    border: 10px solid rgb(255, 0, 0);
+}
+.icon3{
+    border: 10px solid rgb(217, 255, 0);
+}
+.icon:active{
+    box-shadow: 5px 5px 5px black;
+}
+.computer-your{
+    height:15vw ;
+    background-color: aliceblue;
+    background: linear-gradient(to bottom, black,white);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow:10px 10px 10px black ;
+
+}
+.scr{
+    width: 20vw;
+    color: rgb(238, 236, 236);
+    padding: 15px;
+}
+
+
+@media (max-width : 698px) {
+
+    .main-container{
+        margin-top: 2vw;
+    }
+    .nav-container{
+        width: 80%;
+        height: 35vw;
+        padding: 1vw 2vw;
+    }
+    .container-box1{
+        margin-right:10vw;
+    }
+    .container-box1>p{
+        font-size: large;
+    }
+    .container-box2{
+        width: 30vw;
+        height: 11vh;
+        background-color: white;
+    }
+    
+    .score{
+        color: rgb(225, 24, 188);
+        font-size: medium;
+    }
+    
+    .game{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 10vw;
+        color: rgb(56, 78, 220);
+        margin: 1.25vw 30vw;
+    }
+    .game-res{
+        width: 100%;
+        flex-direction: column;
+    }
+    .game-in{
+        margin-top: 5vh;
+    }
+    .icon{
+        padding: 5vw;
+        margin: 2vw;
+    }
+    
+    .computer-your{
+        width: 60vw;
+        height:25vw ;
+        margin-top:5vh   ;
+    }
+    .scr{
+        width: 50vh;
+        color: rgb(238, 236, 236);
+    }    
+} 
